@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HFA-test</title>
+<link href="app.css" rel="stylesheet"></head>
+<body>
+    <main>
+        <div class="user-panel_cover">
+            <section class="admin-bar">
+                <div class="user-profile_bar">
+                    <img src="img/recruter-icon.jpg" alt="usr-img" class="user-profile_img">
+                    <div class="user-initials_cover">
+                        <p class="user-profile_name">Lucas Douglas</p>
+                        <p class="user-profile_mail">lucasdouglas@gmail.com</p>
+                    </div>
+                </div>
+                <nav class="user-panel_nav">
+                    <ul>
+                        <li class="main-user_link active-link"><a href="">Candidates</a>
+                        <li class="main-user_link"><a href="">Companies</a>
+                        <li class="main-user_link"><a href="">Contacts</a>
+                        <li class="main-user_link"><a href="">Missions</a>
+                        <li class="main-user_link add-user_link"><a href="">Users</a>
+                        <li class="main-user_link"><a href="">Imports</a>
+                    </ul>
+                </nav>
+                <div class="partners-logos_cover">
+                    <img src="img/genius-logo.png" alt="partner-logo" class="partner-logo">
+                    <img src="img/high-flyers_logo.png" alt="partner-logo" class="partner-logo">
+                </div>
+            </section>
+            <section class="candidate-info_cover">
+                <header class="candidate-key_info">
+                    <div class="candidate-key_info-item">
+                        <span class="current-data">Candidates</span>
+                        <p class="current-data_mobile">
+                            <img src="img/mobile-menu_grey.svg" alt="menu-icon" class="mobile-menu_icon">
+                        </p>
+                        <p class="candidate-initials" data-change="name"></p>
+                        <p class="candidate-current_position" data-change="position"><span class="current-work_place" data-change="currentcompany"></span></p>
+                    </div>
+                    <div class="candidate-key_info-item">
+                        <address>
+                            <ul class="candidate-contact_info">
+                                <li class="contact-item"><span data-change="phone"></span><span class="contact-type">personal</span></li>
+                                <li class="contact-item"> <span data-change="profesionalemail"></span><span class="contact-type">personal</span></li>
+                                <li class="contact-item"><span data-change="personalemail"></span><span class="contact-type">professional</span></li>
+                                <li class="contact-item"><span data-change="linkedin"></span></li>
+                            </ul>
+                        </address>
+                    </div>
+                </header>
+                <section class="candidate-main_panel">
+                    <div class="tabs candidate-main_tabs">
+                        <div class="anchor-tab_cover">
+                            <div class="tabs__toggle tabs__toggle_active">Profile</div>
+                            <div class="tabs__toggle disabled-tab">Tags</div>
+                            <div class="tabs__toggle disabled-tab">Resume</div>
+                            <div class="tabs__toggle disabled-tab">Documents</div>
+                        </div>
+                        <div class="content-tab_cover">
+                            <div class="tabs__tab profile-tab">
+                                <div class="candidate-main_content-cover">
+                                    <div class="candidate-main_content-item key-skills_content">
+                                        <article class="key-work_skills" id="experience">
+                                            <div class="top-info_bar">
+                                                <p class="skills-type_text">Experiences</p>
+                                                <p class="years-experience dataChange">12 years</p>
+                                            </div>
+                                            <ul class="key-work_skills-list">
+                                            </ul>
+                                            <p class="show-more_link"></p>
+                                        </article>
+                                        <article class="key-work_skills" id="formation">
+                                            <div class="top-info_bar">
+                                                <p class="skills-type_text">Formation</p>
+                                                <p class="years-experience"></p>
+                                            </div>
+                                            <ul class="key-work_skills-list">
+                                            </ul>
+                                            <p class="show-more_link"></p>
+                                        </article>
+                                    </div>
+                                    <div class="candidate-main_content-item work-skills_content">
+                                        <article class="key-work_skills add-work_skills-item" id="currentstatus">
+                                            <div class="top-info_bar">
+                                                <p class="skills-type_text">Current Professional Status</p>
+                                                <p class="edit-icon_link">
+                                                    <img src="img/pencil-icon_grey.svg" alt="edit-icon" class="edit-icon">
+                                                </p>
+                                                <div class="actions-btns_cover">
+                                                    <div class="action-btns_item action-cancel">
+                                                        <img src="img/cancel-icon.svg" alt="abort-btn" class="action-btn abort-btn">
+                                                    </div>
+                                                    <div class="action-btns_item action-confirm">
+                                                        <img src="img/confirm-icon.svg" alt="finish-btn" class="action-btn finish-btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="editable-info_fields">
+                                                <div class="info-field_item">
+                                                    <label>Salary base</label>
+                                                    <input type="text" name="salary-base" value="" placeholder="50K€">
+                                                </div>
+                                                <div class="info-field_item">
+                                                    <label>Salary variable</label>
+                                                    <input type="text" name="salary-variable" value="" placeholder="0K€">
+                                                </div>
+                                                <div class="info-field_item">
+                                                    <label>Advantages</label>
+                                                    <input type="text" name="advantages" value="">
+                                                </div>
+                                                <div class="info-field_item">
+                                                    <label>Location</label>
+                                                    <input type="text" name="location" value="" placeholder="Paris">
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <article class="key-work_skills add-work_skills-item" id="whishedstatus">
+                                            <div class="top-info_bar">
+                                                <p class="skills-type_text">Wished Professional Status</p>
+                                                <p class="edit-icon_link">
+                                                    <img src="img/pencil-icon_grey.svg" alt="edit-icon" class="edit-icon">
+                                                </p>
+                                                <div class="actions-btns_cover">
+                                                    <div class="action-btns_item action-cancel">
+                                                        <img src="img/cancel-icon.svg" alt="abort-btn" class="action-btn abort-btn">
+                                                    </div>
+                                                    <div class="action-btns_item action-confirm">
+                                                        <img src="img/confirm-icon.svg" alt="finish-btn" class="action-btn finish-btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="editable-info_fields">
+                                                <div class="info-field_item">
+                                                    <label>Salary base</label>
+                                                    <input type="text" name="salary-base" value="" placeholder="50K€">
+                                                </div>
+                                                <div class="info-field_item">
+                                                    <label>Salary variable</label>
+                                                    <input type="text" name="salary-variable" value="" placeholder="0K€">
+                                                </div>
+                                                <div class="info-field_item">
+                                                    <label>Advantages</label>
+                                                    <input type="text" name="advantages" value="">
+                                                </div>
+                                                <div class="info-field_item">
+                                                    <label>Location</label>
+                                                    <input type="text" name="location" value="" placeholder="Paris">
+                                                </div>
+                                            </div>
+                                        </article>
+                                        <article class="key-work_skills add-work_skills-item" id="languages">
+                                            <div class="top-info_bar">
+                                                <p class="skills-type_text">Languages</p>
+                                                <p class="edit-icon_link">
+                                                    <img src="img/pencil-icon_grey.svg" alt="edit-icon" class="edit-icon">
+                                                </p>
+                                                <div class="actions-btns_cover">
+                                                    <div class="action-btns_item action-cancel">
+                                                        <img src="img/cancel-icon.svg" alt="abort-btn" class="action-btn abort-btn">
+                                                    </div>
+                                                    <div class="action-btns_item action-confirm">
+                                                        <img src="img/confirm-icon.svg" alt="finish-btn" class="action-btn finish-btn">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="editable-info_fields">
+                                                <div class="info-field_item">
+                                                    <label>Native</label>
+                                                    <input type="text" name="native" value="" placeholder="French">
+                                                </div>
+                                                <div class="info-field_item">
+                                                    <label>Intermediate</label>
+                                                    <input type="text" name="inter" value="" placeholder="English">
+                                                </div>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs__tab"></div>
+                            <div class="tabs__tab"></div>
+                            <div class="tabs__tab"></div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="candidate-add_info-bar">
+                <p class="swipe-btn_icon">
+                    <img src="img/chevron-icon_marine.svg" alt="swipe-icon">
+                </p>
+                <article class="editable-content_cover">
+                    <p class="editable-head_text">Comments</p>
+                    <div class="editor-component">
+                        <div class="editable-controls">
+                            <div class="control-item size-item">
+                                <select id="size-select">
+                                    <option value="12">12</option>
+                                    <option value="14">14</option>
+                                    <option value="16" selected>16</option>
+                                    <option value="18">18</option>
+                                    <option value="20">20</option>
+                                </select>
+                            </div>
+                            <div class="control-item font-item underline-item">
+                            </div>
+                            <div class="control-item font-item bold-item">
+                            </div>
+                            <div class="control-item font-item italic-item">
+                            </div>
+                            <div class="control-item align-item center-item">
+                            </div>
+                            <div class="control-item align-item left-item">
+                            </div>
+                            <div class="control-item align-item right-item">
+                            </div>
+                        </div>
+                        <div class="text-area_cover">
+                            <textarea name="addtext"
+                                      cols="30" rows="10" placeholder="Enter add info here"
+                                      class="add-candidate_content"></textarea>
+                        </div>
+                    </div>
+                </article>
+                <div class="update-btn_cover">
+                    <button class="update-content_btn">Update Candidate</button>
+                </div>
+            </section>
+        </div>
+    </main>
+<script type="text/javascript" src="app.js"></script></body>
+</html>
